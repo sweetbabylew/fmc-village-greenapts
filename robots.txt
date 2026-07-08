@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://village-greenapts.com/sitemap.xml

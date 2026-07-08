@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="714" height="882" viewBox="0 0 714 882" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Village Green two-bedroom floor plan">
+<defs><style>
+    .fp{fill:#FFFFFF}
+    .w{fill:none;stroke:#2C3E2D;stroke-width:7;stroke-linecap:butt}
+    .wo{fill:none;stroke:#2C3E2D;stroke-width:10;stroke-linecap:butt}
+    .d{fill:none;stroke:#7C9880;stroke-width:4;stroke-dasharray:5 6}
+    .arc{fill:none;stroke:#5E7D63;stroke-width:3}
+    .win{fill:none;stroke:#2C3E2D;stroke-width:2.5}
+    .rm{fill:#22331F;font-family:'Helvetica Neue',Arial,sans-serif;font-size:25px;font-style:italic;text-anchor:middle}
+    .cl{fill:#4A5C4D;font-family:'Helvetica Neue',Arial,sans-serif;font-size:18px;font-style:italic;text-anchor:middle}
+    .sm{fill:#4A5C4D;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;font-style:italic;text-anchor:middle}
+  </style></defs>
+<rect class="fp" x="22" y="10" width="666" height="858"/>
+<path class="w" d="M321,410 V430 M321,510 V530 M384,10 V225 M384,280 V330 M384,385 V533 M492,102 V218 M492,295 V533 M384,102 H492 M492,136 H688 M384,200 H404 M472,200 H492 M22,285 H384 M492,316 H688 M321,410 H384 M321,530 H384 M22,533 H384 M586,533 H688 M586,715 H688"/>
+<path class="d" d="M321,430 V510 M384,225 V280 M384,330 V385 M492,218 V295 M586,575 V675 M586,740 V840 M404,200 H472 M505,533 H585"/>
+<path class="arc" d="M579,868 V795 M579,795 A73,73 0 0 0 506,868"/>
+<path class="win" d="M17,634 V753 M22,634 V753 M27,634 V753 M15,634 H29 M15,753 H29"/>
+<path class="wo" d="M22,10 H688 M688,10 V868 M688,868 H579 M506,868 H22 M22,868 V753 M22,634 V10"/>
+<text class="rm" x="200" y="150">Bedroom</text>
+<text class="rm" x="200" y="415">Bedroom</text>
+<text class="rm" x="592" y="235">Bathroom</text>
+<text class="rm" x="592" y="428">Kitchen</text>
+<text class="cl" x="438" y="392">Hallway</text>
+<text class="cl" x="438" y="158">Closet</text>
+<text class="cl" x="562" y="60">Closet</text>
+<text class="sm" x="352" y="474">Closet</text>
+<text class="rm" x="250" y="705">Living Room</text>
+<text class="sm" x="637" y="628">Closet</text>
+<text class="sm" x="637" y="798">Closet</text>
+</svg>
