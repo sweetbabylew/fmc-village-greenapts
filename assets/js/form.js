@@ -272,6 +272,7 @@
               form.reset();
               clearError();
               showStatus('Thank you — we received your message and will be in touch. If it is urgent, please call the office.', true);
+              if (btn) { btn.disabled = false; btn.textContent = original; }
             }
           } else {
             throw new Error('bad status');
