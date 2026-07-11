@@ -82,7 +82,7 @@
         <form class="fmc-form apply-online-form application-form" novalidate>
           <div class="app-draft-banner" role="note">
             <strong>DRAFT &mdash; not for production use.</strong>
-            <span>Content encodes researched HOTMA / 7 CFR 3560.154 requirements (see HANDOFF-USDA-515-APPLICATION.md) and must be reviewed by FMC&#39;s RD servicing specialist and a Maryland/Virginia housing attorney before use — especially the screening questions against Maryland/local ban-the-box ordinances, and FMC&#39;s rental-history look-back policy.</span>
+            <span>Content encodes researched HOTMA / 7 CFR 3560.154 requirements (see HANDOFF-USDA-515-APPLICATION.md) and must be reviewed by FMC&#39;s RD servicing specialist and a Maryland/Virginia housing attorney before use — especially FMC&#39;s rental-history look-back policy. (Ban-the-box: owner determined 2026-07-10 that no FMC property is in a Maryland jurisdiction with a housing ban-the-box ordinance.)</span>
           </div>
           <section class="app-section" aria-labelledby="sec-instructions">
             <h2 id="sec-instructions">Before you begin</h2>
@@ -170,7 +170,7 @@
 
           <section class="app-section" aria-labelledby="sec-assets">
             <h2 id="sec-assets">Household assets</h2>
-            <p class="app-hint">Assets are things like bank accounts, cash savings, stocks, and real estate. Retirement accounts do NOT count and should not be listed. We are required to verify every household's assets, no matter the amount, so please list each one below.</p>
+            <p class="app-hint">Assets are things like bank accounts, cash savings, stocks, and real estate. Retirement accounts, education savings accounts (529/Coverdell), and everyday personal belongings — like the family car — do NOT count and should not be listed. We are required to verify every household's assets, no matter the amount, so please list each one below.</p>
             <div class="app-repeater is-table" data-repeater="asset_items" data-count="1" data-min="1">
             <p class="app-hint app-repeater-note">List every asset for everyone in the household — there is no minimum amount.</p>
             <div class="rt-head" style="grid-template-columns:2.4rem 1.7fr 1.1fr 1.1fr 3.25rem"><span></span><span>Type of asset</span><span>Current value</span><span>Amount still owed (real estate)</span><span></span></div>
@@ -181,7 +181,7 @@
             <button type="button" class="btn btn-secondary app-add" data-add>+ Add another asset</button>
           </div>
             <div class="field field-consent"><label class="choice"><input type="checkbox" name="assets_none" value="yes" /> <span>My household has NO assets to list.</span></label><p class="field-hint">Check this only if no one in your household has any assets at all — you may leave the list above blank.</p></div>
-            <div class="field field-consent"><label class="choice"><input type="checkbox" name="assets_all_listed" value="yes" required /> <span>I have listed ALL of my household's assets, or checked the box above because my household has none. (Retirement accounts do not count.)</span></label></div>
+            <div class="field field-consent"><label class="choice"><input type="checkbox" name="assets_all_listed" value="yes" required /> <span>I have listed ALL of my household's assets, or checked the box above because my household has none. (Retirement and education savings accounts do not count.)</span></label></div>
             <fieldset class="field"><legend>In the last 2 years, has anyone in the household sold or given away anything of value for less than it was worth?</legend>
               <label class="choice"><input type="radio" name="asset_disposed" value="Yes" /> Yes</label>
               <label class="choice"><input type="radio" name="asset_disposed" value="No" /> No</label>
@@ -347,11 +347,6 @@
           <section class="app-section" aria-labelledby="sec-other">
             <h2 id="sec-other">A few last details</h2>
             
-            <div class="field-row">
-            <div class="field"><label for="emergency_name">Emergency contact — name <span class="optional">(optional)</span></label><input type="text" id="emergency_name" name="emergency_name" /></div>
-            <div class="field"><label for="emergency_phone">Emergency contact — phone <span class="optional">(optional)</span></label><input type="tel" id="emergency_phone" name="emergency_phone" /></div>
-            <div class="field"><label for="emergency_relationship">Relationship <span class="optional">(optional)</span></label><input type="text" id="emergency_relationship" name="emergency_relationship" /></div>
-            </div>
             <div class="field"><label for="vehicles">Vehicles (make, model, license plate) <span class="optional">(optional)</span></label><textarea id="vehicles" name="vehicles" rows="3"></textarea></div>
             <div class="field"><label for="how_heard">How did you hear about us? <span class="optional">(optional)</span></label><input type="text" id="how_heard" name="how_heard" /></div>
           </section>
