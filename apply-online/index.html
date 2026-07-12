@@ -261,6 +261,11 @@
               <label class="choice"><input type="radio" name="eviction_history" value="No" /> No</label>
             </fieldset>
             <div class="app-cond" data-cond-field="eviction_history" data-cond-mode="show" data-cond-equals="Yes" hidden><div class="field"><label for="eviction_explain">If yes, please explain <span class="optional">(optional)</span></label><textarea id="eviction_explain" name="eviction_explain" rows="3"></textarea></div></div>
+            <fieldset class="field"><legend>Has a landlord ever given you a notice of lease violations?</legend>
+              <label class="choice"><input type="radio" name="violation_history" value="Yes" /> Yes</label>
+              <label class="choice"><input type="radio" name="violation_history" value="No" /> No</label>
+            </fieldset>
+            <div class="app-cond" data-cond-field="violation_history" data-cond-mode="show" data-cond-equals="Yes" hidden><div class="field"><label for="violation_explain">If yes, please explain <span class="optional">(optional)</span></label><textarea id="violation_explain" name="violation_explain" rows="3"></textarea></div></div>
           </section>
 
           <section class="app-section" aria-labelledby="sec-references">
@@ -281,11 +286,13 @@
 
           <section class="app-section" aria-labelledby="sec-screening">
             <h2 id="sec-screening">A few required questions</h2>
-            <p class="app-hint">Federal rules require us to ask these. Read each statement and check ONLY the ones that are true for your household. If none are true, leave them all unchecked.</p>
+            <p class="app-hint">Read each statement and check ONLY the ones that are true for your household. If none are true, leave them all unchecked.</p>
             <fieldset class="field"><legend>Check all that apply to your household: <span class="optional">(optional)</span></legend>
               <label class="choice"><input type="checkbox" name="screen_affirm" value="One or more household members were evicted from federally assisted housing for drug-related criminal activity in the last 3 years" /> One or more household members were evicted from federally assisted housing for drug-related criminal activity in the last 3 years</label>
               <label class="choice"><input type="checkbox" name="screen_affirm" value="One or more household members are currently using an illegal controlled substance" /> One or more household members are currently using an illegal controlled substance</label>
               <label class="choice"><input type="checkbox" name="screen_affirm" value="One or more household members are subject to a LIFETIME sex-offender registration requirement in any state" /> One or more household members are subject to a LIFETIME sex-offender registration requirement in any state</label>
+              <label class="choice"><input type="checkbox" name="screen_affirm" value="One or more household members have been convicted of a sex-related crime" /> One or more household members have been convicted of a sex-related crime</label>
+              <label class="choice"><input type="checkbox" name="screen_affirm" value="One or more household members have been convicted of a drug-related crime in the last 5 years" /> One or more household members have been convicted of a drug-related crime in the last 5 years</label>
             </fieldset>
             <div class="field field-consent"><label class="choice"><input type="checkbox" name="screen_affirm_ack" value="yes" required /> <span>I have read the statements above and checked every one that is true for my household (if none are true, I have left them all unchecked).</span></label></div>
             <fieldset class="field"><legend>Do you currently receive other rental assistance or a Housing Choice Voucher?</legend>
@@ -296,13 +303,14 @@
               <label class="choice"><input type="radio" name="screen_in_subsidized" value="Yes" /> Yes</label>
               <label class="choice"><input type="radio" name="screen_in_subsidized" value="No" /> No</label>
             </fieldset>
-            <div class="app-note-plain"><p>These are the only criminal-history and subsidy questions we ask. We do not ask about arrests or convictions generally.</p></div>
+            <div class="app-note-plain"><p>These are the only criminal-history and subsidy questions we ask. We do not ask about arrests.</p></div>
           </section>
 
           <section class="app-section" aria-labelledby="sec-certifications">
             <h2 id="sec-certifications">Your certification and signature</h2>
             
             <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_primary" value="yes" required /> <span>I certify that, if approved, this home will be my household's primary residence.</span></label></div>
+            <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_deposit" value="yes" required /> <span>I understand that a security deposit must be paid before I move in.</span></label></div>
             <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_truth" value="yes" required /> <span>I certify that the information in this application is true and complete to the best of my knowledge. I understand that giving false information may disqualify my application or end my tenancy, and may be a violation of federal law.</span></label></div>
             <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_authorize" value="yes" required /> <span>I authorize Fifth Management to verify the information I have given and to obtain the records needed to determine my eligibility.</span></label></div>
             <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_econsent" value="yes" required /> <span>I agree to receive communications about my application electronically. (You may withdraw this and use paper at any time.)</span></label></div>
