@@ -87,13 +87,12 @@
           <section class="app-section" aria-labelledby="sec-instructions">
             <h2 id="sec-instructions">Before you begin</h2>
             
-            <div class="app-note-plain"><p>Please answer every question. If something does not apply to you, write “N/A.” Every adult (18 or older) who will live in the home must sign.</p>
-            <p>You can also apply on paper. If you need help, or need this application in another format, please call us; we are glad to help.</p>
-            <p>If there is a waitlist, your priority is set by the date and time we receive a COMPLETE application. If anything is missing, we will contact you within 10 days to let you know.</p></div>
+            <div class="app-note-plain"><p>Please answer every question. If something does not apply to you, write “N/A.” Every adult (18 or older) who will live in the home must sign. You can also apply on paper. If you need help, or need this application in another format, please call us; we are glad to help. If there is a waitlist, your priority is set by the date and time we receive a COMPLETE application. If anything is missing, we will contact you within 10 days to let you know.</p></div>
+            <div class="app-note-plain"><p>Every household is expected to be able to meet the basic responsibilities of tenancy — to pay rent on time, to keep the home clean and in good condition, and to not disturb your neighbors. You do not have to be able to do these things without help. If anyone in your household has a disability and needs a reasonable accommodation, you may ask for one at any time.</p></div>
           </section>
 
           <section class="app-section" aria-labelledby="sec-household">
-            <h2 id="sec-household">Who will live in the home</h2>
+            <h2 id="sec-household">Family Summary</h2>
             <p class="app-hint">Start with the head of household, then add everyone else who will live in the home.</p>
             <div class="app-repeater is-table" data-repeater="members" data-count="1" data-min="1">
             <div class="rt-head" style="grid-template-columns:2.4rem 2fr 1.7fr 1.3fr 1.5fr 0.9fr 3.25rem"><span></span><span>Full name</span><span>Relationship to head of household</span><span>Date of birth</span><span>Social Security number</span><span>Full-time student</span><span></span></div>
@@ -126,8 +125,8 @@
             <div class="field field-consent"><label class="choice"><input type="checkbox" name="physical_same" value="yes" checked /> <span>My physical address is the same as my mailing address</span></label></div>
             <div class="field"><label for="physical_street">Physical address (only if different from mailing) <span class="optional">(optional)</span></label><input type="text" id="physical_street" name="physical_street" /></div>
             <div class="field-row">
-            <div class="field"><label for="home_phone">Home or cell phone</label><input type="tel" id="home_phone" name="home_phone" /></div>
-            <div class="field"><label for="alt_phone">Another phone <span class="optional">(optional)</span></label><input type="tel" id="alt_phone" name="alt_phone" /></div>
+            <div class="field"><label for="home_phone">Cellphone</label><input type="tel" id="home_phone" name="home_phone" /></div>
+            <div class="field"><label for="alt_phone">Other phone <span class="optional">(optional)</span></label><input type="tel" id="alt_phone" name="alt_phone" /></div>
             </div>
             <div class="field"><label for="email">Email <span class="req" aria-hidden="true">*</span></label><input type="email" id="email" name="email" required /></div>
             <p class="field-hint">We use this to send you a dated confirmation when we receive your application, and to keep you updated. No email address? Please apply on paper.</p>
@@ -150,13 +149,13 @@
               <label class="choice"><input type="radio" name="accessible_need" value="Yes" /> Yes</label>
               <label class="choice"><input type="radio" name="accessible_need" value="No" /> No</label>
             </fieldset>
-            <div class="field"><label for="accommodation_request">If you need a reasonable accommodation for a disability — in how you apply, or in your home or the community — please tell us here. <span class="optional">(optional)</span></label><textarea id="accommodation_request" name="accommodation_request" rows="3"></textarea></div>
+            <div class="field"><label for="accommodation_request">If you need a reasonable accommodation for a disability, please explain below. <span class="optional">(optional)</span></label><textarea id="accommodation_request" name="accommodation_request" rows="3"></textarea></div>
             <p class="field-hint">Asking for an accommodation is free and will never count against your application. You do not have to share a diagnosis.</p>
           </section>
 
           <section class="app-section" aria-labelledby="sec-income">
             <h2 id="sec-income">Household income</h2>
-            <p class="app-hint">Add every source of income for everyone who will live in the home, before taxes. Include earned income (wages, self-employment) and unearned income (Social Security, SSI, pensions, benefits, support, and so on).</p>
+            <p class="app-hint">Add every source of income for everyone who will live in the home, before taxes. Include earned income (wages, self-employment, side-gigs) and unearned income (Social Security, SSI, pensions, benefits, support, and so on).</p>
             <div class="app-repeater is-table" data-repeater="income_sources" data-count="1" data-min="0">
             <div class="rt-head" style="grid-template-columns:2.4rem 1.5fr 1.7fr 1.1fr 1.7fr 3.25rem"><span></span><span>Who receives it</span><span>Type of income</span><span>Gross amount</span><span>How often</span><span></span></div>
             <div class="app-repeater-items">
@@ -170,9 +169,8 @@
 
           <section class="app-section" aria-labelledby="sec-assets">
             <h2 id="sec-assets">Household assets</h2>
-            <p class="app-hint">Assets are things like bank accounts, cash savings, stocks, and real estate. Retirement accounts, education savings accounts (529/Coverdell), and everyday personal belongings — like the family car — do NOT count and should not be listed. We are required to verify every household's assets, no matter the amount, so please list each one below.</p>
+            <p class="app-hint">List every asset for everyone in the household. Assets include things like bank accounts, cash, stocks, jewelry, and real estate. Exclusions: retirement accounts (401ks), educational savings accounts (529s), and everyday personal belongings (family car). Please be thorough, we are required to verify every household's assets.</p>
             <div class="app-repeater is-table" data-repeater="asset_items" data-count="1" data-min="1">
-            <p class="app-hint app-repeater-note">List every asset for everyone in the household — there is no minimum amount.</p>
             <div class="rt-head" style="grid-template-columns:2.4rem 1.7fr 1.1fr 1.1fr 3.25rem"><span></span><span>Type of asset</span><span>Current value</span><span>Amount still owed (real estate)</span><span></span></div>
             <div class="app-repeater-items">
             <div class="rt-row" role="group" aria-label="Asset 1" style="grid-template-columns:2.4rem 1.7fr 1.1fr 1.1fr 3.25rem"><div class="rt-num" aria-hidden="true">1</div><div class="rt-cell"><label class="rt-vh" for="asset_items_0_type">Type of asset</label><select id="asset_items_0_type" name="asset_items_0_type"><option value="">Choose&hellip;</option><option>Checking account</option><option>Savings account</option><option>CD or money market</option><option>Stocks, bonds, or brokerage</option><option>Real estate</option><option>Other</option></select></div><div class="rt-cell"><label class="rt-vh" for="asset_items_0_value">Current value</label><div class="money-input"><span class="money-sign" aria-hidden="true">$</span><input type="number" id="asset_items_0_value" name="asset_items_0_value" min="0" step="1" inputmode="decimal" placeholder="0" /></div></div><div class="rt-cell"><label class="rt-vh" for="asset_items_0_owed">Amount still owed (real estate)</label><div class="money-input"><span class="money-sign" aria-hidden="true">$</span><input type="number" id="asset_items_0_owed" name="asset_items_0_owed" min="0" step="1" inputmode="decimal" placeholder="0" /></div></div><div class="rt-remove-cell"><button type="button" class="rt-remove" data-remove aria-label="Remove Asset 1" title="Remove">&times;</button></div></div>
@@ -198,7 +196,7 @@
           </section>
 
           <section class="app-section" aria-labelledby="sec-deductions">
-            <h2 id="sec-deductions">A few things that can lower your rent</h2>
+            <h2 id="sec-deductions">Deductions</h2>
             <p class="app-hint">These may qualify your household for deductions. Answer the questions below — we only ask for dollar amounts where they apply to you. Every amount should be what you actually pay OUT OF POCKET (what is not reimbursed or paid by insurance, a program, or anyone else).</p>
             <fieldset class="field"><legend>Do you pay for childcare for a child under 13 so that an adult can work, look for work, or go to school?</legend>
               <label class="choice"><input type="radio" name="childcare_need" value="Yes" /> Yes</label>
@@ -221,47 +219,39 @@
           </section>
 
           <section class="app-section" aria-labelledby="sec-rental-history">
-            <h2 id="sec-rental-history">Where you have lived</h2>
-            <p class="app-hint">List your current home first, then the homes before it (add a row for each). For each one, check which household members lived there.</p>
+            <h2 id="sec-rental-history">Housing History</h2>
+            <p class="app-hint">List each Adult's current home first, then previous homes and landlords for each Adult household member.</p>
             <div class="app-repeater is-cards" data-repeater="residences" data-count="1" data-min="1">
             <div class="app-repeater-items">
             <div class="app-card" role="group" aria-label="Current home"><div class="app-card-head"><span class="app-card-title">Current home</span></div>
             <div class="field-row">
-            <div class="field"><label for="residences_0_address">Address or community</label><input type="text" id="residences_0_address" name="residences_0_address" /></div>
-            <div class="field"><label for="residences_0_landlord_name">Landlord / property manager</label><input type="text" id="residences_0_landlord_name" name="residences_0_landlord_name" /></div>
-            <div class="field"><label for="residences_0_landlord_phone">Landlord phone</label><input type="tel" id="residences_0_landlord_phone" name="residences_0_landlord_phone" /></div>
-            <fieldset class="field"><legend>Related to this landlord?</legend>
-              <label class="choice"><input type="radio" name="residences_0_related" value="Yes" /> Yes</label>
-              <label class="choice"><input type="radio" name="residences_0_related" value="No" /> No</label>
-            </fieldset>
-            <div class="field"><label for="residences_0_move_in">Move-in date</label><input type="date" id="residences_0_move_in" name="residences_0_move_in" /></div>
-            <div class="field"><label for="residences_0_move_out">Move-out date (leave blank if current) <span class="optional">(optional)</span></label><input type="date" id="residences_0_move_out" name="residences_0_move_out" /></div>
+            <div class="field"><label for="residences_0_address">Address/Community</label><input type="text" id="residences_0_address" name="residences_0_address" /></div>
+            <div class="field"><label for="residences_0_occupancy">Dates</label><input type="text" id="residences_0_occupancy" name="residences_0_occupancy" /></div>
+            <div class="field"><label for="residences_0_landlord_name">Landlord/property manager</label><input type="text" id="residences_0_landlord_name" name="residences_0_landlord_name" /></div>
+            <div class="field"><label for="residences_0_landlord_phone">Landlord's phone</label><input type="tel" id="residences_0_landlord_phone" name="residences_0_landlord_phone" /></div>
             </div>
+            <div class="field field-consent"><label class="choice"><input type="checkbox" name="residences_0_related" value="yes" /> <span>Related to landlord?</span></label></div>
             <fieldset class="field hm-field" data-household-members data-hm-name="residences_0_residents"><legend>Which household members lived here?</legend><div class="hm-checks" data-hm-target></div><input type="text" name="residences_0_residents" class="hm-fallback" placeholder="Names of household members who lived here" /></fieldset><p class="field-hint">Check everyone from your household who lived at this address.</p>
           </div>
             </div>
             <template data-repeater-template><div class="app-card" role="group" aria-label="Home __N__"><div class="app-card-head"><span class="app-card-title">Home __N__</span><button type="button" class="app-card-remove" data-remove aria-label="Remove Home __N__">Remove</button></div>
             <div class="field-row">
-            <div class="field"><label for="residences___I___address">Address or community</label><input type="text" id="residences___I___address" name="residences___I___address" /></div>
-            <div class="field"><label for="residences___I___landlord_name">Landlord / property manager</label><input type="text" id="residences___I___landlord_name" name="residences___I___landlord_name" /></div>
-            <div class="field"><label for="residences___I___landlord_phone">Landlord phone</label><input type="tel" id="residences___I___landlord_phone" name="residences___I___landlord_phone" /></div>
-            <fieldset class="field"><legend>Related to this landlord?</legend>
-              <label class="choice"><input type="radio" name="residences___I___related" value="Yes" /> Yes</label>
-              <label class="choice"><input type="radio" name="residences___I___related" value="No" /> No</label>
-            </fieldset>
-            <div class="field"><label for="residences___I___move_in">Move-in date</label><input type="date" id="residences___I___move_in" name="residences___I___move_in" /></div>
-            <div class="field"><label for="residences___I___move_out">Move-out date (leave blank if current) <span class="optional">(optional)</span></label><input type="date" id="residences___I___move_out" name="residences___I___move_out" /></div>
+            <div class="field"><label for="residences___I___address">Address/Community</label><input type="text" id="residences___I___address" name="residences___I___address" /></div>
+            <div class="field"><label for="residences___I___occupancy">Dates</label><input type="text" id="residences___I___occupancy" name="residences___I___occupancy" /></div>
+            <div class="field"><label for="residences___I___landlord_name">Landlord/property manager</label><input type="text" id="residences___I___landlord_name" name="residences___I___landlord_name" /></div>
+            <div class="field"><label for="residences___I___landlord_phone">Landlord's phone</label><input type="tel" id="residences___I___landlord_phone" name="residences___I___landlord_phone" /></div>
             </div>
+            <div class="field field-consent"><label class="choice"><input type="checkbox" name="residences___I___related" value="yes" /> <span>Related to landlord?</span></label></div>
             <fieldset class="field hm-field" data-household-members data-hm-name="residences___I___residents"><legend>Which household members lived here?</legend><div class="hm-checks" data-hm-target></div><input type="text" name="residences___I___residents" class="hm-fallback" placeholder="Names of household members who lived here" /></fieldset><p class="field-hint">Check everyone from your household who lived at this address.</p>
           </div></template>
             <button type="button" class="btn btn-secondary app-add" data-add>+ Add another previous home</button>
           </div>
-            <fieldset class="field"><legend>Have you ever been given a notice to move out (notice to quit) or been evicted?</legend>
+            <fieldset class="field"><legend>Has anyone in your household ever been given a notice to move out (notice to quit) or been evicted?</legend>
               <label class="choice"><input type="radio" name="eviction_history" value="Yes" /> Yes</label>
               <label class="choice"><input type="radio" name="eviction_history" value="No" /> No</label>
             </fieldset>
             <div class="app-cond" data-cond-field="eviction_history" data-cond-mode="show" data-cond-equals="Yes" hidden><div class="field"><label for="eviction_explain">If yes, please explain <span class="optional">(optional)</span></label><textarea id="eviction_explain" name="eviction_explain" rows="3"></textarea></div></div>
-            <fieldset class="field"><legend>Has a landlord ever given you a notice of lease violations?</legend>
+            <fieldset class="field"><legend>Has anyone in your household ever received a notice of lease violations from a landlord?</legend>
               <label class="choice"><input type="radio" name="violation_history" value="Yes" /> Yes</label>
               <label class="choice"><input type="radio" name="violation_history" value="No" /> No</label>
             </fieldset>
@@ -285,12 +275,12 @@
           </section>
 
           <section class="app-section" aria-labelledby="sec-screening">
-            <h2 id="sec-screening">A few required questions</h2>
+            <h2 id="sec-screening">Required questions</h2>
             <p class="app-hint">Read each statement and check ONLY the ones that are true for your household. If none are true, leave them all unchecked.</p>
             <fieldset class="field"><legend>Check all that apply to your household: <span class="optional">(optional)</span></legend>
               <label class="choice"><input type="checkbox" name="screen_affirm" value="One or more household members were evicted from federally assisted housing for drug-related criminal activity in the last 3 years" /> One or more household members were evicted from federally assisted housing for drug-related criminal activity in the last 3 years</label>
               <label class="choice"><input type="checkbox" name="screen_affirm" value="One or more household members are currently using an illegal controlled substance" /> One or more household members are currently using an illegal controlled substance</label>
-              <label class="choice"><input type="checkbox" name="screen_affirm" value="One or more household members are subject to a LIFETIME sex-offender registration requirement in any state" /> One or more household members are subject to a LIFETIME sex-offender registration requirement in any state</label>
+              <label class="choice"><input type="checkbox" name="screen_affirm" value="One or more household members are subject to a lifetime sex-offender registration requirement in any state" /> One or more household members are subject to a lifetime sex-offender registration requirement in any state</label>
               <label class="choice"><input type="checkbox" name="screen_affirm" value="One or more household members have been convicted of a sex-related crime" /> One or more household members have been convicted of a sex-related crime</label>
               <label class="choice"><input type="checkbox" name="screen_affirm" value="One or more household members have been convicted of a drug-related crime in the last 5 years" /> One or more household members have been convicted of a drug-related crime in the last 5 years</label>
             </fieldset>
@@ -306,19 +296,27 @@
             <div class="app-note-plain"><p>These are the only criminal-history and subsidy questions we ask. We do not ask about arrests.</p></div>
           </section>
 
+          <section class="app-section" aria-labelledby="sec-other">
+            <h2 id="sec-other">Additional questions</h2>
+            
+            <div class="field"><label for="vehicles">Vehicles (make, model, license plate) <span class="optional">(optional)</span></label><textarea id="vehicles" name="vehicles" rows="3"></textarea></div>
+            <div class="field"><label for="how_heard">How did you hear about us? <span class="optional">(optional)</span></label><input type="text" id="how_heard" name="how_heard" /></div>
+          </section>
+
           <section class="app-section" aria-labelledby="sec-certifications">
             <h2 id="sec-certifications">Your certification and signature</h2>
             
             <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_primary" value="yes" required /> <span>I certify that, if approved, this home will be my household's primary residence.</span></label></div>
             <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_deposit" value="yes" required /> <span>I understand that a security deposit must be paid before I move in.</span></label></div>
-            <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_truth" value="yes" required /> <span>I certify that the information in this application is true and complete to the best of my knowledge. I understand that giving false information may disqualify my application or end my tenancy, and may be a violation of federal law.</span></label></div>
-            <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_authorize" value="yes" required /> <span>I authorize Fifth Management to verify the information I have given and to obtain the records needed to determine my eligibility.</span></label></div>
+            <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_selection" value="yes" required /> <span>I understand that submitting this application does not guarantee housing, and that my household will be screened using the same resident-selection standards we apply to every applicant. An application may be denied because of historical nonpayment, extreme or repeated lease violations, or documented conduct that may threaten the rights or well-being of residents or property.</span></label></div>
+            <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_truth" value="yes" required /> <span>I certify that everything in this application is true, correct, and complete, and that I have not left out anything important. I understand that giving false information, or leaving out information, may disqualify my application or end my tenancy after I move in, and that knowingly making a false statement to obtain federally assisted housing is a violation of federal law.</span></label></div>
+            <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_authorize" value="yes" required /> <span>I authorize Fifth Management, and the agencies and tenant-screening companies it uses, to verify the information I have given and to obtain the reports and records needed to determine my eligibility — including rental history, credit reports, and criminal background checks.</span></label></div>
             <div class="field field-consent"><label class="choice"><input type="checkbox" name="cert_econsent" value="yes" required /> <span>I agree to receive communications about my application electronically. (You may withdraw this and use paper at any time.)</span></label></div>
             <div class="app-signature"><strong>Applicant signature</strong><p class="field-hint">Every adult (18 or older) who will live in the home must sign. On paper, sign and date here; online, checking the boxes above and submitting serves as your electronic signature, and you may request a wet-signature form instead.</p></div>
           </section>
 
           <section class="app-section" aria-labelledby="sec-demographics">
-            <h2 id="sec-demographics">About you (optional)</h2>
+            <h2 id="sec-demographics">Voluntary reporting</h2>
             
             <div class="app-note-plain"><p>The following is voluntary. We ask it only to meet federal reporting requirements and to make sure we are serving our community fairly. Your answers will NOT affect your application in any way, and you may skip any part.</p></div>
             <fieldset class="field"><legend>Ethnicity <span class="optional">(optional)</span></legend>
@@ -334,7 +332,12 @@
               <label class="choice"><input type="checkbox" name="race" value="White" /> White</label>
               <label class="choice"><input type="checkbox" name="race" value="Prefer not to answer" /> Prefer not to answer</label>
             </fieldset>
-            <div class="field"><label for="gender">Gender <span class="optional">(optional)</span></label><input type="text" id="gender" name="gender" /></div>
+            <fieldset class="field"><legend>Gender <span class="optional">(optional)</span></legend>
+              <label class="choice"><input type="radio" name="gender" value="Male" /> Male</label>
+              <label class="choice"><input type="radio" name="gender" value="Female" /> Female</label>
+              <label class="choice"><input type="radio" name="gender" value="Other" /> Other</label>
+              <input type="text" name="gender_other" class="other-write" placeholder="If other, please specify" aria-label="If other, please specify" />
+            </fieldset>
           </section>
 
           <section class="app-section" aria-labelledby="sec-vawa">
@@ -350,13 +353,6 @@
             
             <div class="app-note-plain"><p>The current USDA nondiscrimination statement applies to this community. The full statement is included with your application packet and on our website.</p>
             <p><a href="/usda-nondiscrimination/">Read the full USDA nondiscrimination statement</a>.</p></div>
-          </section>
-
-          <section class="app-section" aria-labelledby="sec-other">
-            <h2 id="sec-other">A few last details</h2>
-            
-            <div class="field"><label for="vehicles">Vehicles (make, model, license plate) <span class="optional">(optional)</span></label><textarea id="vehicles" name="vehicles" rows="3"></textarea></div>
-            <div class="field"><label for="how_heard">How did you hear about us? <span class="optional">(optional)</span></label><input type="text" id="how_heard" name="how_heard" /></div>
           </section>
           <section class="app-section app-section-certify">
             <div class="app-note"><p><strong>This draft is not yet accepting online submissions.</strong> Secure online intake &mdash; your application goes straight to the property office, never by email &mdash; is the next step. For now, please use the paper application or call the office.</p></div>
