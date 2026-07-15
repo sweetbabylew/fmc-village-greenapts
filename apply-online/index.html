@@ -300,6 +300,11 @@
             <h2 id="sec-other">Additional questions</h2>
             
             <div class="field"><label for="vehicles">Vehicles (make, model, license plate) <span class="optional">(optional)</span></label><textarea id="vehicles" name="vehicles" rows="3"></textarea></div>
+            <fieldset class="field"><legend>Do you have any pets? <span class="optional">(optional)</span></legend>
+              <label class="choice"><input type="radio" name="pets" value="Yes" /> Yes</label>
+              <label class="choice"><input type="radio" name="pets" value="No" /> No</label>
+            </fieldset><p class="field-hint">Pets 25 lbs or under may be permitted with prior permission and proper documentation — maximum of one dog and two cats. An assistance animal for a disability is never counted as a pet and has no weight limit — tell us about it under reasonable accommodations above.</p>
+            <div class="app-cond" data-cond-field="pets" data-cond-mode="show" data-cond-equals="Yes" hidden><div class="field"><label for="pets_detail">If yes, tell us about each pet (type, breed, and weight) <span class="optional">(optional)</span></label><textarea id="pets_detail" name="pets_detail" rows="3"></textarea></div></div>
             <div class="field"><label for="how_heard">How did you hear about us? <span class="optional">(optional)</span></label><input type="text" id="how_heard" name="how_heard" /></div>
           </section>
 
