@@ -3,19 +3,20 @@
     .fp{fill:#FFFFFF}
     .w{fill:none;stroke:#2C3E2D;stroke-width:7;stroke-linecap:butt}
     .wo{fill:none;stroke:#2C3E2D;stroke-width:10;stroke-linecap:butt}
-    .d{fill:none;stroke:#7C9880;stroke-width:4;stroke-dasharray:5 6}
+    .d{fill:none;stroke:#7C9880;stroke-width:2.5;stroke-dasharray:5 6}
     .arc{fill:none;stroke:#5E7D63;stroke-width:3}
     .win{fill:none;stroke:#2C3E2D;stroke-width:2.5}
+    .st{fill:none;stroke:#2C3E2D;stroke-width:2.5}
     .rm{fill:#22331F;font-family:'Helvetica Neue',Arial,sans-serif;font-size:25px;font-style:italic;text-anchor:middle}
     .cl{fill:#4A5C4D;font-family:'Helvetica Neue',Arial,sans-serif;font-size:18px;font-style:italic;text-anchor:middle}
     .sm{fill:#4A5C4D;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;font-style:italic;text-anchor:middle}
   </style></defs>
-<rect class="fp" x="19" y="23" width="695" height="842"/>
-<path class="w" d="M104,487 V534 M104,620 V722 M104,807 V865 M279,23 V132 M279,226 V495 M453,23 V120 M453,226 V407 M453,471 V495 M279,120 H328 M405,120 H453 M19,226 H329 M403,226 H453 M279,333 H453 M19,495 H155 M229,495 H479 M552,495 H714 M19,663 H104"/>
-<path class="d" d="M104,534 V620 M104,722 V807 M279,132 V226 M453,407 V471 M328,120 H405 M329,226 H403 M155,495 H229 M479,495 H552"/>
-<path class="arc" d="M127,865 V791 M127,791 A74,74 0 0 1 201,865"/>
+<rect class="fp" x="18" y="24" width="696" height="841"/>
+<path class="w" d="M104,16 V30 M104,486 V534 M104,620 V722 M104,807 V872 M278,17 V132 M278,220 V501 M453,17 V130 M453,221 V407 M453,471 V503 M272,125 H328 M403,125 H457 M12,226 H328 M403,226 H459 M273,333 H459 M12,495 H155 M229,495 H479 M552,495 H719 M12,664 H108"/>
+<path class="d" d="M100,527 V627 M108,527 V627 M100,714 V814 M108,714 V814 M274,127 V227 M282,127 V227 M449,401 V473 M457,401 V473 M322,121 H406 M322,129 H406 M149,491 H234 M149,499 H234 M474,491 H557 M474,499 H557 M323,223 H412 M323,231 H412"/>
 <path class="win" d="M709,638 V738 M714,638 V738 M719,638 V738 M707,638 H721 M707,738 H721"/>
-<path class="wo" d="M19,23 H714 M714,23 V638 M714,738 V865 M714,865 H201 M127,865 H19 M19,865 V23"/>
+<path class="arc" d="M127,865 V791 M127,791 A74,74 0 0 1 201,865"/>
+<path class="wo" d="M18,24 H714 V638 M714,738 V865 H201 M127,865 H18 V24"/>
 <text class="rm" x="149" y="124">Bathroom</text>
 <text class="rm" x="149" y="365">Kitchen</text>
 <text class="rm" x="583" y="259">Bedroom</text>
