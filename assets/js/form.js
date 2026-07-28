@@ -199,6 +199,30 @@
     }
     if (fileInput && !recheck) fileInput.addEventListener('change', checkSize);
 
+    // Contact preference (Apply form): email is required by default; checking
+    // "I prefer to be contacted by phone" makes phone required and email
+    // optional. Flips the inputs' required state and the labels' * /(optional)
+    // markers. Without JS the defaults hold; the Worker enforces the same rule.
+    var prefBox = form.querySelector('[data-contact-pref]');
+    if (prefBox) {
+      var setNeed = function (input, required) {
+        if (!input) return;
+        input.required = required;
+        var field = input.closest ? input.closest('.field') : null;
+        if (!field) return;
+        var req = field.querySelector('.req');
+        var opt = field.querySelector('.optional');
+        if (req) req.hidden = !required;
+        if (opt) opt.hidden = required;
+      };
+      var applyPref = function () {
+        setNeed(form.querySelector('input[name="email"]'), !prefBox.checked);
+        setNeed(form.querySelector('input[name="phone"]'), prefBox.checked);
+      };
+      prefBox.addEventListener('change', applyPref);
+      applyPref();
+    }
+
     function showStatus(msg, ok) {
       if (!status) return;
       status.hidden = false;

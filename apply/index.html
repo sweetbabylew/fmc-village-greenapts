@@ -129,13 +129,19 @@
           </div>
 
           <div class="field">
-            <label for="phone">Phone <span class="req" aria-hidden="true">*</span></label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+            <label for="email">Email <span class="req" aria-hidden="true">*</span><span class="optional" hidden>(optional)</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
           </div>
 
           <div class="field">
-            <label for="email">Email <span class="optional">(optional)</span></label>
-            <input type="email" id="email" name="email" autocomplete="email" />
+            <div class="label-row">
+              <label for="phone">Phone <span class="req" aria-hidden="true" hidden>*</span></label>
+              <label class="choice">
+                <input type="checkbox" name="preferred_contact" value="phone" data-contact-pref />
+                <span>I prefer to be contacted by phone</span>
+              </label>
+            </div>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" />
           </div>
 
           <div class="field field-consent">
