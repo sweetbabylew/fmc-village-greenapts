@@ -801,6 +801,7 @@ html:not(.has-nav-js) .nav-group:focus-within .nav-dropdown { display: block; }
   margin: 0;
 }
 .apply-card-title { margin: 0 0 .8rem; font-size: 1.5rem; }
+.apply-card-online { border-top: 5px solid var(--deep); }
 .apply-card-download { border-top: 5px solid var(--green); }
 .apply-card-upload { border-top: 5px solid var(--brick); }
 .apply-card-lead { margin: 0 0 1.2rem; }
@@ -1151,6 +1152,8 @@ html.lightbox-open, body.lightbox-open { overflow: hidden; }
 }
 .apply-online-form .app-section > h2 { margin: 0 0 1rem; font-size: 1.3rem; }
 .apply-online-form .app-section-certify { background: #edf3ea; }
+.apply-online-form .app-closing-notice { background: #edf3ea; border-color: rgba(47, 74, 50, .3); }
+.apply-online-form .app-closing-notice .app-note-plain { color: var(--ink); }
 .app-hint { color: var(--ink-soft); font-size: .95rem; margin: -.35rem 0 1.1rem; }
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1rem; }
 .field-row-3 { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 0 1rem; }
@@ -1170,6 +1173,8 @@ html.lightbox-open, body.lightbox-open { overflow: hidden; }
 .app-subhead { margin: 1.4rem 0 .6rem; font-size: 1.05rem; }
 .app-note-plain { color: var(--ink-soft); font-size: .95rem; margin: 0 0 1.1rem; }
 .app-note-plain p { margin: 0 0 .5rem; }
+.app-panel { background: rgba(47, 74, 50, .06); border: 1px solid rgba(47, 74, 50, .18); border-radius: 10px; padding: 1rem 1.1rem .35rem; margin: .25rem 0 1.25rem; }
+.app-panel .app-note-plain { color: var(--ink); }
 .app-signature { border-top: 1px dashed var(--line-strong); margin-top: 1rem; padding-top: 1rem; }
 .money-input { display: flex; align-items: center; gap: .45rem; }
 .money-input .money-sign { font-weight: 700; color: var(--ink-soft); }
